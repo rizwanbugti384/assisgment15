@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --red: #ed1c24;
+    --green: #28a745;
+    --dark-grey: #ffffff0f;
+    --light-grey: #a19f9f;
+
+}
+
+@font-face {
+    font-family: futurak;
+    src: url("./asset/font/futurk/futurak.ttf");
+}
+@font-face {
+    font-family: inter;
+    src: url("./asset/font/inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+@font-face {
+    font-family: apercu;
+    src: url("./asset/font/Apercu-Font/Apercu\ regular.otf");
+}
+@font-face {
+    font-family: butler;
+    src: url("./asset/font/butler/Butler-Regular.otf");
+}
+@font-face {
+    font-family: futuraBlack;
+    src: url(./asset/font/Libertinus_Serif/LibertinusSerif-SemiBold.ttf);
+}
+@font-face {
+    font-family: futurareg;
+    src: url(./asset/font/Libertinus_Serif/LibertinusSerif-Regular.ttf);
+}
+body{
+    background-color: var(--black);
+    color:var(--white);
+    font-family: inter;
+}
+.navbar{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.logo-img img{
+    width: 165px;
+}
+.navitems > a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.6rem;
+}
+.navitems{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.franchise-btn{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+.order-btn{
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+}
+/* ================================== main starts========================== */
+.form-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+}
+
+input:invalid {
+  border: 2px solid transparent;
+}
+
+.error-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.submit-btn {
+  background-color: #ffc400;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start;
+}
+/* ================================== footer starts========================== */
+
+
+.footer {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+  }
+
+.footer-column h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+  line-height: 1.8;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.social-icons img {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #f44336;
+  padding: 8px;
+}
+
+.app-buttons img {
+  width: 140px;
+  margin: 10px 0;
+  display: block;
+}
+
+.policy-links {
+  margin-top: 20px;
+
+}
+
+.policy-links a {
+  margin-right: 15px;
+  color: #ccc;
+  font-size: 13px;
+}
+.footer-bottom {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}

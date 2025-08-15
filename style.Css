@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --red: #ed1c24;
+    --green: #28a745;
+    --dark-grey: #ffffff0f;
+    --light-grey: #a19f9f;
+
+}
+
+@font-face {
+    font-family: futurak;
+    src: url("./asset/font/futurk/futurak.ttf");
+}
+@font-face {
+    font-family: inter;
+    src: url("./asset/font/inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+@font-face {
+    font-family: apercu;
+    src: url("./asset/font/Apercu-Font/Apercu\ regular.otf");
+}
+@font-face {
+    font-family: butler;
+    src: url("./asset/font/butler/Butler-Regular.otf");
+}
+@font-face {
+    font-family: futuraBlack;
+    src: url(./asset/font/Libertinus_Serif/LibertinusSerif-SemiBold.ttf);
+}
+@font-face {
+    font-family: futurareg;
+    src: url(./asset/font/Libertinus_Serif/LibertinusSerif-Regular.ttf);
+}
+body{
+    background-color: var(--black);
+    color:var(--white);
+    font-family: inter;
+}
+/* Header Starts */
+.navbar{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.logo-img img{
+    width: 165px;
+}
+.navitems > a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.6rem;
+}
+.navitems{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.franchise-btn{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+.order-btn{
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+}
+
+/* header ended */
+
+
+   /* Main Starts section 1*/
+    .slider-image{
+        width: 100%;
+        padding: 10px 0;
+    }
+        /* Section 1 ended and 
+                                Section 1.2 starts */
+    .section-2 h2{
+        font-family:apercu;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: 100;
+    }
+    .brand-title{
+        font-family: futurak;
+        font-size: 5.2rem;
+        text-align: center;
+        margin: 20px 10px;
+    }
+    .section-2 p{
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+
+    /* Section 1.2 ended and 
+                                Section 1.3 starts */
+
+    .brand-img{
+        background-color: var(--white);
+        padding: 20px;
+        border-radius: 2px;
+        width: 250px;
+        height: 140px;
+    }
+    .children{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+    .sub-brands{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 40px 0px;
+    }
+    .brand-order-btn{
+        background-color: transparent;
+        color: var(--white);
+        border: 0.01px solid #a19f9f;
+        border-radius: 10px;
+        padding: 10px 20px;
+
+    }
+/* ===================Section 1.3 end ====================================*/
+.section-3{
+    background-color: var(--dark-grey);
+}
+.section-3 h2{
+        font-family:apercu;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: 100;
+        margin: 0 0 8px;
+}
+.section3-title{
+        font-family: futurak;
+        font-size: 5.2rem;
+        text-align: center;        
+        padding: 10px 20px 20px;
+}
+/* =================== Islamabad================== */
+.isl-restaurant{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px; 
+    margin: 20px;
+    padding: 30px;
+    
+}
+.isl-res-p{
+        font-size: 3rem;
+        /* margin:20px 20px;
+        padding: 10px 10px;
+        width: 100%; */
+        
+} 
+.sec-3p{
+        font-size: 2.6rem;
+        margin:20px 0;
+        text-align: center;
+        
+}
+.isl-restaurant img{
+    height: 500px;
+} 
+.cityname{
+    color: var(--red);
+    letter-spacing: 10px;
+    
+}
+.restaurant{
+    font-size: 35px;
+}
+
+.location-icon{
+    color: var(--white);
+   
+}
+.direction-arrow{
+    background-color: transparent;
+    padding: 5px 10px;
+    border: 1px solid var(--light-grey);
+    border-radius: 20px;
+    color: var(--white) ;
+}
+.direction-arrow i{
+    background-color: var(--white);
+    padding: 7px 8px;
+    border: none;
+    border-radius: 26px;
+    color: var(--red);
+}
+/* ============= Faisalabad====================== */
+.fai-restaurant{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;  
+    gap: 30px; 
+    margin: 20px;
+    padding: 30px;
+}
+.fai-restaurant img{
+    height: 500px;
+} 
+.fai-res-p{
+        font-size: 1.6rem;
+        margin:20px 0;
+}
+        /* =======================Bahawalpur================= */
+.bah-restaurant{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 30px;
+    margin: 20px;
+    padding: 30px;
+}
+.bah-restaurant img{
+    height: 500px;
+} 
+.bah-res-p{
+        font-size: 1.6rem;
+        margin:20px 0;
+}
+        /* ======================== Section - 4 ==================== */
+.ex-saltnpepper{
+        font-family: futurak;
+        font-size: 64px;
+        font-weight: 100;      
+        padding: 10px 20px 20px;
+}
+.ex-franchises{
+        font-family: butler;
+        font-size: 5.2rem;
+        text-align: center;  
+        font-weight: 100;      
+        
+}
+/* ======================= section - 4 part 2 ====================== */
+.section-4-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.sect-4-p{
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 20px;        
+}
+.cityname2{
+    color: var(--red);
+    letter-spacing: 10px;
+    font-size: 1.5rem;
+}
+.ebrand-title{
+        font-family: futurak;
+        font-size: 3rem;
+        text-align: center;
+        margin: 20px 0;
+}
+.exp-address{
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    color: var(--light-grey);
+}
+.exp-phone{
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+     color: var(--light-grey);
+}
+.section-4-main-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    padding: 20px;
+    text-align: center;
+}
+.section-4-main-2 img{
+    width: 350px;
+    height: 240px;
+    border-radius: 2px;
+    background-color: var(--white);
+}
+.opening-soon{
+    background-color: var(--white);
+    border: 1px solid var(--light-grey);
+    color: var(--black);
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 400px;
+    height: 200px;
+    padding: 25px 0;
+    
+}
+.section-6{
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.open-soon{
+    color: var(--red);
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+        
+}
+.saltnpepper{
+    font-family: futuraBlack;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.citynames{
+    font-family: futurareg;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.socialfeed{
+    font-family: futuraBlack;
+    font-size: 4.5rem;
+    text-align: center;
+    font-weight: 100;
+    margin: 20px 0;
+    padding: 30px;
+}
+/* ========= footer starts ============== */
+.footer {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+  }
+
+.footer-column h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+  line-height: 1.8;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.social-icons img {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #f44336;
+  padding: 8px;
+}
+
+.app-buttons img {
+  width: 140px;
+  margin: 10px 0;
+  display: block;
+}
+
+.policy-links {
+  margin-top: 20px;
+
+}
+
+.policy-links a {
+  margin-right: 15px;
+  color: #ccc;
+  font-size: 13px;
+}
+.footer-bottom {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}

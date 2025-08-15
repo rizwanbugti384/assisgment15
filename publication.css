@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --red: #ed1c24;
+    --green: #28a745;
+    --dark-grey: #ffffff0f;
+    --light-grey: #a19f9f;
+
+}
+
+@font-face {
+    font-family: futurak;
+    src: url("./asset/font/futurk/futurak.ttf");
+}
+@font-face {
+    font-family: inter;
+    src: url("./asset/font/inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+@font-face {
+    font-family: apercu;
+    src: url("./asset/font/Apercu-Font/Apercu\ regular.otf");
+}
+@font-face {
+    font-family: butler;
+    src: url("./asset/font/butler/Butler-Regular.otf");
+}
+@font-face {
+    font-family: futuraBlack;
+    src: url(./asset/font/Libertinus_Serif/LibertinusSerif-SemiBold.ttf);
+}
+@font-face {
+    font-family: futurareg;
+    src: url(./asset/font/Libertinus_Serif/LibertinusSerif-Regular.ttf);
+}
+body{
+    background-color: var(--black);
+    color:var(--white);
+    font-family: inter;
+}
+.navbar{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.logo-img img{
+    width: 165px;
+}
+.navitems > a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.6rem;
+}
+.navitems{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.franchise-btn{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+.order-btn{
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+}
+.books4sale{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.books4sale img{
+    border: 1px solid var(--light-grey);
+    height: 800px;
+    border-radius: 20px;
+    margin-top: 20px;    
+}
+.branches{
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 60px;
+    line-height: 1.9;
+}
+.branches h1{
+    font-size: 5rem;
+}
+.branches h2{
+    font-size: 3rem;
+}
+.branches p{
+    font-size: 2rem;
+}
